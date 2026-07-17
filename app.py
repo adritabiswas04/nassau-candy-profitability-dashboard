@@ -31,7 +31,7 @@ PRODUCT_FACTORY_MAP = {
 
 @st.cache_data
 def load_data(uploaded_file=None):
-    default_path = Path("data/Nassau Candy Distributor.csv")
+    default_path = Path("Nassau Candy Distributor.csv")
     if uploaded_file is not None:
         df = pd.read_csv(uploaded_file)
     else:
